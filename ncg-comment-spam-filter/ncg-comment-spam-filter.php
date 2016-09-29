@@ -43,6 +43,6 @@ function check_form_spam( $comment_id, $comment_object ){
   }
 }
 
-  add_filter('comment_form', 'add_form_spam_protection', 2);
-  add_action('wp_insert_comment','check_form_spam',99,2);
+add_filter('comment_form', 'add_form_spam_protection', 2);
+add_action('wp_insert_comment','check_form_spam',99,2);
 
